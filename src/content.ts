@@ -132,10 +132,10 @@ export const contactHeader = {
 
 // ⚠️  REPLACE THESE WITH REAL DETAILS BEFORE GOING LIVE
 export const contactDetails = {
-  phone: '+381 64 123 4567',
+  phone: '+381 64 466 3366',
   email: 'acgorano@gmail.com',
   address: {
-    street: 'Bulevar Cara Lazara 12',
+    street: 'Ilije Pantelića 10',
     city: 'Novi Sad',
     country: 'Srbija',
   },
@@ -149,6 +149,6 @@ export const contactDetails = {
 // ⚠️  GET YOUR EMBED URL FROM: Google Maps → Share → Embed a map → copy the src value
 export const mapConfig = {
   embedUrl:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90588.42522671154!2d19.7904!3d45.2671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b10613de93455%3A0xb6f9b09e6b8b5c5!2sNovi%20Sad!5e0!3m2!1sen!2srs!4v1234567890',
-  linkUrl: 'https://maps.google.com/?q=Novi+Sad,+Srbija',
+    'https://maps.google.com/maps?q=Ilije+Pantelica+10,+Novi+Sad,+Serbia&output=embed&z=16',
+  linkUrl: 'https://maps.google.com/?q=Ilije+Pantelica+10,+Novi+Sad,+Serbia',
 }

@@ -46,8 +46,8 @@ export function SiteFooter() {
               Kontakt
             </span>
             <div className="text-sm text-zinc-500 space-y-2">
-              <p>Bulevar Cara Lazara 12, Novi Sad</p>
-              <p>+381 64 123 4567</p>
+              <p>Ilije Pantelića 10, Novi Sad</p>
+              <p>+381 64 466 3366</p>
               <p>Pon – Sub: 08:00 – 17:00</p>
             </div>
           </div>
