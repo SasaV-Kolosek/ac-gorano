@@ -1,0 +1,291 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="atmo" cx="55%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#09090b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0%" stop-color="#52525b"/>
+      <stop offset="40%" stop-color="#3f3f46"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#71717a"/>
+      <stop offset="100%" stop-color="#3f3f46"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3f3f46" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#09090b" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="wglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25"/>
+      <stop offset="70%" stop-color="#1d4ed8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hlglow" cx="0%" cy="50%" r="100%">
+      <stop offset="0%" stop-color="#bfdbfe" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#3b82f6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rlglow" cx="100%" cy="50%" r="100%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#991b1b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#450a0a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="softblur">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1920" height="1080" fill="#09090b"/>
+
+  <!-- Atmospheric glow behind car -->
+  <ellipse cx="950" cy="520" rx="700" ry="380" fill="url(#atmo)"/>
+
+  <!-- Ground plane -->
+  <rect x="0" y="820" width="1920" height="260" fill="#09090b"/>
+  <line x1="0" y1="820" x2="1920" y2="820" stroke="#27272a" stroke-width="1" opacity="0.8"/>
+
+  <!-- Ground reflection of car (blur) -->
+  <path d="M 340 820 Q 640 830 950 828 Q 1280 826 1570 820 L 1570 900 Q 1280 908 950 910 Q 640 912 340 900 Z"
+        fill="url(#ground)" filter="url(#softblur)"/>
+
+  <!-- ======= MERCEDES A CLASS W177 SILHOUETTE ======= -->
+
+  <!-- Main body lower section -->
+  <path d="
+    M 340 820
+    L 340 755
+    Q 345 738 365 728
+    Q 395 716 445 710
+    L 490 706
+    Q 510 700 525 686
+    Q 548 664 580 644
+    Q 618 620 668 604
+    Q 720 588 785 580
+    Q 845 574 910 572
+    Q 980 570 1055 572
+    Q 1140 574 1215 580
+    Q 1275 586 1315 596
+    Q 1345 604 1360 616
+    Q 1375 628 1378 642
+    L 1388 660
+    Q 1400 672 1440 682
+    L 1500 694
+    Q 1545 703 1565 716
+    Q 1578 726 1580 745
+    L 1582 820
+    Z
+  " fill="url(#body)"/>
+
+  <!-- Roof / upper greenhouse -->
+  <path d="
+    M 580 644
+    Q 618 620 668 604
+    Q 720 588 785 580
+    Q 845 574 910 572
+    Q 980 570 1055 572
+    Q 1140 574 1215 580
+    Q 1275 586 1315 596
+    Q 1345 604 1360 616
+    L 1350 616
+    Q 1315 608 1268 602
+    Q 1205 596 1130 594
+    Q 1055 592 985 592
+    Q 910 592 845 594
+    Q 775 598 718 606
+    Q 668 614 638 628
+    L 590 644
+    Z
+  " fill="url(#roof)"/>
+
+  <!-- Full glass area (combined windows) -->
+  <path d="
+    M 638 628
+    Q 668 614 718 606
+    Q 775 598 845 594
+    Q 910 592 985 592
+    Q 1055 592 1130 594
+    Q 1205 596 1268 602
+    Q 1315 608 1340 618
+    Q 1355 626 1358 636
+    L 1355 640
+    Q 1338 628 1305 620
+    Q 1262 610 1200 606
+    Q 1130 602 1055 600
+    Q 980 598 910 600
+    Q 840 602 775 608
+    Q 714 616 680 630
+    L 644 640
+    Z
+  " fill="url(#glass)" opacity="0.85"/>
+
+  <!-- Front windshield (slightly brighter) -->
+  <path d="
+    M 580 644
+    Q 600 636 638 628
+    L 644 640
+    Q 618 650 596 662
+    Q 572 676 558 692
+    Q 545 706 542 720
+    L 532 720
+    Q 535 700 550 682
+    Q 562 664 580 644
+    Z
+  " fill="url(#glass)" opacity="0.5"/>
+
+  <!-- Rear window -->
+  <path d="
+    M 1340 618
+    Q 1358 608 1374 616
+    Q 1386 624 1390 638
+    L 1378 642
+    Q 1374 630 1364 624
+    Q 1352 618 1340 626
+    Z
+  " fill="url(#glass)" opacity="0.6"/>
+
+  <!-- A-pillar line -->
+  <line x1="590" y1="644" x2="542" y2="724" stroke="#71717a" stroke-width="2" opacity="0.5"/>
+
+  <!-- B-pillar -->
+  <line x1="985" y1="592" x2="985" y2="672" stroke="#3f3f46" stroke-width="3" opacity="0.7"/>
+
+  <!-- C-pillar line -->
+  <line x1="1340" y1="618" x2="1380" y2="660" stroke="#71717a" stroke-width="2" opacity="0.5"/>
+
+  <!-- Door line (front door) -->
+  <path d="M 545 724 Q 546 696 550 682 Q 562 664 580 644 Q 630 634 720 628"
+        fill="none" stroke="#52525b" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Rocker panel / sill -->
+  <rect x="490" y="748" width="870" height="14" rx="4" fill="#27272a"/>
+
+  <!-- Front bumper detail -->
+  <path d="M 340 755 Q 342 738 365 728 Q 390 720 430 714 L 488 708"
+        fill="none" stroke="#71717a" stroke-width="2" opacity="0.4"/>
+
+  <!-- Rear bumper detail -->
+  <path d="M 1492 706 L 1545 716 Q 1570 724 1578 740 L 1582 758"
+        fill="none" stroke="#71717a" stroke-width="2" opacity="0.4"/>
+
+  <!-- Front grille area -->
+  <path d="M 344 758 Q 345 742 362 734 Q 378 726 400 724 L 450 720 Q 470 718 478 726 L 485 738 Q 478 748 455 752 L 360 756 Z"
+        fill="#1c1c1e" stroke="#3f3f46" stroke-width="1" opacity="0.8"/>
+
+  <!-- Grille lines -->
+  <g stroke="#3f3f46" stroke-width="1" opacity="0.5">
+    <line x1="365" y1="726" x2="365" y2="754"/>
+    <line x1="395" y1="722" x2="395" y2="754"/>
+    <line x1="425" y1="720" x2="425" y2="754"/>
+    <line x1="455" y1="720" x2="455" y2="754"/>
+    <line x1="345" y1="734" x2="484" y2="734"/>
+    <line x1="344" y1="744" x2="484" y2="744"/>
+  </g>
+
+  <!-- Mercedes three-pointed star on grille -->
+  <g transform="translate(412, 738)" opacity="0.7">
+    <circle r="9" fill="none" stroke="#a1a1aa" stroke-width="1.2"/>
+    <line x1="0" y1="-9" x2="0" y2="0" stroke="#a1a1aa" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="7.8" y2="4.5" stroke="#a1a1aa" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="-7.8" y2="4.5" stroke="#a1a1aa" stroke-width="1.5"/>
+  </g>
+
+  <!-- Front headlight glow (behind) -->
+  <ellipse cx="360" cy="720" rx="80" ry="28" fill="url(#hlglow)" filter="url(#blur)" opacity="0.7"/>
+
+  <!-- Front headlight unit -->
+  <path d="M 345 708 Q 365 698 410 702 Q 440 704 460 712 Q 468 718 464 726 Q 456 734 430 736 Q 395 738 358 730 Q 342 724 342 716 Z"
+        fill="#0f172a" stroke="#1e3a8a" stroke-width="1.5" opacity="0.9"/>
+  <!-- DRL strip -->
+  <path d="M 350 710 Q 370 703 408 706 Q 435 708 452 716"
+        fill="none" stroke="#bfdbfe" stroke-width="2.5" opacity="0.8" stroke-linecap="round"/>
+
+  <!-- Side mirror -->
+  <path d="M 527 688 Q 532 680 548 678 Q 558 676 562 682 L 558 694 Q 548 698 534 698 Z"
+        fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+
+  <!-- Rear light glow -->
+  <ellipse cx="1570" cy="714" rx="70" ry="24" fill="url(#rlglow)" filter="url(#blur)" opacity="0.8"/>
+
+  <!-- Rear light unit -->
+  <path d="M 1540 700 Q 1558 692 1580 698 Q 1590 702 1592 712 Q 1590 722 1575 726 Q 1555 730 1535 724 Q 1522 718 1522 708 Z"
+        fill="#1c0a0a" stroke="#7f1d1d" stroke-width="1.5" opacity="0.9"/>
+  <!-- Rear DRL/brake strip -->
+  <path d="M 1540 702 Q 1558 696 1578 702 Q 1586 706 1588 712"
+        fill="none" stroke="#f87171" stroke-width="2" opacity="0.6" stroke-linecap="round"/>
+
+  <!-- ======= FRONT WHEEL ======= -->
+  <!-- Tyre -->
+  <circle cx="618" cy="820" r="122" fill="#0f0f0f" stroke="#27272a" stroke-width="2"/>
+  <!-- Wheel glow -->
+  <circle cx="618" cy="820" r="132" fill="url(#wglow)"/>
+  <!-- Rim outer ring -->
+  <circle cx="618" cy="820" r="100" fill="#18181b" stroke="#3f3f46" stroke-width="2.5"/>
+  <!-- Rim face -->
+  <circle cx="618" cy="820" r="82" fill="#1c1c1e"/>
+  <!-- 5-spoke design -->
+  <g transform="translate(618, 820)" stroke="#52525b" stroke-width="4" stroke-linecap="round">
+    <line x1="0" y1="-82" x2="0" y2="-20"/>
+    <line x1="77.9" y1="25.4" x2="18.8" y2="5.8"/>
+    <line x1="48.1" y1="-66.2" x2="11.6" y2="-15.8"/>
+    <line x1="-77.9" y1="25.4" x2="-18.8" y2="5.8"/>
+    <line x1="-48.1" y1="-66.2" x2="-11.6" y2="-15.8"/>
+  </g>
+  <!-- Spoke fill triangles -->
+  <g transform="translate(618, 820)" fill="#27272a" opacity="0.5">
+    <polygon points="0,-82 18.8,-5.8 -18.8,-5.8"/>
+    <polygon points="77.9,25.4 18.8,5.8 11.6,-15.8"/>
+    <polygon points="48.1,-66.2 11.6,-15.8 -11.6,-15.8"/>
+    <polygon points="-77.9,25.4 -18.8,5.8 -11.6,-15.8"/>
+    <polygon points="-48.1,-66.2 -11.6,-15.8 11.6,-15.8"/>
+  </g>
+  <!-- Hub -->
+  <circle cx="618" cy="820" r="18" fill="#27272a" stroke="#52525b" stroke-width="2"/>
+  <circle cx="618" cy="820" r="8" fill="#3f3f46"/>
+
+  <!-- ======= REAR WHEEL ======= -->
+  <circle cx="1340" cy="820" r="122" fill="#0f0f0f" stroke="#27272a" stroke-width="2"/>
+  <circle cx="1340" cy="820" r="132" fill="url(#wglow)"/>
+  <circle cx="1340" cy="820" r="100" fill="#18181b" stroke="#3f3f46" stroke-width="2.5"/>
+  <circle cx="1340" cy="820" r="82" fill="#1c1c1e"/>
+  <g transform="translate(1340, 820)" stroke="#52525b" stroke-width="4" stroke-linecap="round">
+    <line x1="0" y1="-82" x2="0" y2="-20"/>
+    <line x1="77.9" y1="25.4" x2="18.8" y2="5.8"/>
+    <line x1="48.1" y1="-66.2" x2="11.6" y2="-15.8"/>
+    <line x1="-77.9" y1="25.4" x2="-18.8" y2="5.8"/>
+    <line x1="-48.1" y1="-66.2" x2="-11.6" y2="-15.8"/>
+  </g>
+  <g transform="translate(1340, 820)" fill="#27272a" opacity="0.5">
+    <polygon points="0,-82 18.8,-5.8 -18.8,-5.8"/>
+    <polygon points="77.9,25.4 18.8,5.8 11.6,-15.8"/>
+    <polygon points="48.1,-66.2 11.6,-15.8 -11.6,-15.8"/>
+    <polygon points="-77.9,25.4 -18.8,5.8 -11.6,-15.8"/>
+    <polygon points="-48.1,-66.2 -11.6,-15.8 11.6,-15.8"/>
+  </g>
+  <circle cx="1340" cy="820" r="18" fill="#27272a" stroke="#52525b" stroke-width="2"/>
+  <circle cx="1340" cy="820" r="8" fill="#3f3f46"/>
+
+  <!-- Wheel arch highlights -->
+  <path d="M 498 818 Q 560 720 618 700 Q 676 720 740 818"
+        fill="none" stroke="#3f3f46" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 1218 818 Q 1280 720 1340 700 Q 1400 720 1460 818"
+        fill="none" stroke="#3f3f46" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Ground shadow under car -->
+  <ellipse cx="975" cy="825" rx="640" ry="18" fill="#000000" opacity="0.6" filter="url(#softblur)"/>
+
+  <!-- Headlight beam on ground -->
+  <path d="M 344 820 L 180 820 L 100 850 L 344 850 Z" fill="#bfdbfe" opacity="0.03"/>
+
+  <!-- Subtle noise texture overlay (top left atmospheric) -->
+  <rect x="0" y="0" width="400" height="600" fill="#09090b" opacity="0.3"/>
+</svg>
