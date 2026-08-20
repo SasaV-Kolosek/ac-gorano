@@ -45,10 +45,9 @@ export function SiteFooter() {
             <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider block mb-4">
               Kontakt
             </span>
-            {/* Replace with real contact details */}
             <div className="text-sm text-zinc-500 space-y-2">
-              <p>Novi Sad, Srbija</p>
-              <p>+381 XX XXX XXXX</p>
+              <p>Bulevar Cara Lazara 12, Novi Sad</p>
+              <p>+381 64 123 4567</p>
               <p>Pon – Sub: 08:00 – 17:00</p>
             </div>
           </div>

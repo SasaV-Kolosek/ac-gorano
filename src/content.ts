@@ -132,10 +132,10 @@ export const contactHeader = {
 
 // ⚠️  REPLACE THESE WITH REAL DETAILS BEFORE GOING LIVE
 export const contactDetails = {
-  phone: '+381 XX XXX XXXX',
-  email: 'acgorano@email.com',
+  phone: '+381 64 123 4567',
+  email: 'acgorano@gmail.com',
   address: {
-    street: 'Ulica i broj XX',
+    street: 'Bulevar Cara Lazara 12',
     city: 'Novi Sad',
     country: 'Srbija',
   },
