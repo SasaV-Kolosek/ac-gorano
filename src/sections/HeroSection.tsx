@@ -15,7 +15,7 @@ export function HeroSection({ hero, trustStats, modelTags, onCtaClick }: HeroPro
 
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden bg-zinc-950">
-      {/* Background image — place Mercedes A/B photo at /public/images/hero-car.jpg */}
+      {/* Background photo */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${hero.backgroundImage})` }}

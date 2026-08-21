@@ -9,8 +9,8 @@ export const hero = {
     'Prodaja polovnih i novih delova, ugradnja i servis — sve na jednom mestu u Novom Sadu. Od stručnjaka koji poznaju ove modele iznutra i izvana.',
   ctaLabel: 'Kontaktirajte nas',
   ctaHref: '#kontakt',
-  backgroundImage: '/images/hero-car.svg',
-  backgroundAlt: 'Mercedes-Benz A klasa',
+  backgroundImage: '/images/hero-car.jpg',
+  backgroundAlt: 'Mercedes-Benz A klasa W169',
 }
 
 export const trustStats = [
