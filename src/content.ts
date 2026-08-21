@@ -149,6 +149,6 @@ export const contactDetails = {
 // ⚠️  GET YOUR EMBED URL FROM: Google Maps → Share → Embed a map → copy the src value
 export const mapConfig = {
   embedUrl:
-    'https://maps.google.com/maps?q=Ilije+Pantelica+10,+Novi+Sad,+Serbia&output=embed&z=16',
-  linkUrl: 'https://maps.google.com/?q=Ilije+Pantelica+10,+Novi+Sad,+Serbia',
+    'https://maps.google.com/maps?q=AC+Gorano+Novi+Sad&output=embed&z=16',
+  linkUrl: 'https://maps.google.com/?q=AC+Gorano+Novi+Sad',
 }
